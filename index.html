@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sitio Web de Ingeniería Biomédica</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: white;
+      z-index: 1000;
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    body {
+      padding-top: 60px;
+      font-family: sans-serif;
+    }
+    h2 {
+      transition: color 0.5s ease, transform 0.5s ease;
+    }
+    h2:hover {
+      color: #ff6e40;
+      transform: scale(1.1);
+    }
+    section img {
+      transition: all 0.4s ease;
+    }
+    section img:hover {
+      border: 3px solid #ffc13b;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      transform: scale(1.03);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    /* 🔹 Animación CSS solo con CSS3 */
+    .animacion-medica {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #f2faff;
+    }
+
+    .pulsante-icono {
+      width: 80px;
+      height: 80px;
+      margin: 30px auto;
+      background-color: #42a5f5;
+      border-radius: 50%;
+      animation: latido 1.2s infinite;
+      box-shadow: 0 0 0 rgba(66, 165, 245, 0.7);
+    }
+
+    @keyframes latido {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(66, 165, 245, 0.7);
+      }
+      70% {
+        transform: scale(1.15);
+        box-shadow: 0 0 0 20px rgba(66, 165, 245, 0);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(66, 165, 245, 0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 style="text-align: center;">Bienvenido a Mi Sitio Web de BIOMÉDICA</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="pagina1.html">Definición Biomédica</a></li>
+        <li><a href="pagina2.html">Aplicaciones Clínicas</a></li>
+        <li><a href="pagina3.html">Tendencias Futuras</a></li>
+        <li><a href="#imagenes-medicas">Imágenes Médicas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="slider">
+      <button id="prev">⟵</button>
+      <div class="slider-container">
+        <img src="images/slider/slide1.png" class="slide active" alt="Imagen 1">
+        <img src="images/slider/slide2.png" class="slide" alt="Imagen 2">
+        <img src="images/slider/slide3.png" class="slide" alt="Imagen 3">
+      </div>
+      <button id="next">⟶</button>
+    </section>
+
+    <section id="diagnostico" class="info-section">
+      <img src="images/secciones/info1.png" alt="Tecnología médica">
+      <div>
+        <h2>Innovación en Diagnóstico</h2>
+        <p>Exploramos cómo la inteligencia artificial acelera la detección temprana de enfermedades complejas como el cáncer y enfermedades cardiovasculares.</p>
+      </div>
+    </section>
+
+    <section id="cirugia" class="info-section">
+      <img src="images/secciones/info2.png" alt="Robótica clínica">
+      <div>
+        <h2>Robótica en Cirugía</h2>
+        <p>Desde brazos robóticos hasta microsistemas guiados, la cirugía asistida por robot ya es una realidad clínica en múltiples hospitales.</p>
+      </div>
+    </section>
+
+    <section id="protesis" class="info-section">
+      <img src="images/secciones/info3.png" alt="Prótesis avanzadas">
+      <div>
+        <h2>Prótesis inteligentes</h2>
+        <p>La integración de sensores y algoritmos en prótesis permite respuestas más naturales y mejora la calidad de vida de pacientes amputados.</p>
+      </div>
+    </section>
+
+    <section id="rehabilitacion" class="info-section">
+      <img src="images/secciones/info4.png" alt="Rehabilitación tecnológica">
+      <div>
+        <h2>Rehabilitación asistida</h2>
+        <p>Dispositivos automatizados adaptativos ayudan en procesos de recuperación motora tras accidentes cerebrovasculares y traumatismos.</p>
+      </div>
+    </section>
+
+ 
+<section id="imagenes-medicas" class="animacion-medica">
+  <h2>Avances en Imágenes Médicas</h2>
+  <p>La ingeniería biomédica ha revolucionado los métodos de diagnóstico mediante sistemas avanzados de visualización interna no invasiva.</p>
+  <div class="pulsante-icono"></div>
+</section>
